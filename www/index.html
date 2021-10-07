@@ -150,7 +150,9 @@
 
 
     // 変数宣言
-
+    var active = false;
+    var startTime = 0;
+    var period = 0;
 
     
     // ボタンの初期設定
@@ -170,20 +172,16 @@
       img.onload = function(){
         ctx.drawImage(img, 0,0,300,300);
       }
-      var active = false;
-      var startTime = 0;
-      var period = 0;
-
-      active = ture;
-      startTime = new Data();
-        
-        
+      
+      var audio = new Audio();
+      audio.src = "pin.wav";
+      audio.play();
     }
     
     // ButtonAがクリックされた時の処理
     function btnAClick(e){
-        
-        
+      active = ture;
+      startTime = new Data();        
     }
 
     // ButtonBがクリックされた時の処理
