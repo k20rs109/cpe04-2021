@@ -45,6 +45,10 @@ button{
         width: 50%;
         margin: 0 auto;
     }
+
+    #time::after{
+      content: "s";
+    }
     
     #mycanvas {
         color: #ffffff;
