@@ -160,7 +160,6 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
-        
     }
 
     // Alarmの処理
@@ -196,7 +195,10 @@
         period = 60 * parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
         $("#time").html("経過時間 : 0");
         $("#remain").html("残り時間 : " + period);
+        $("#time").css("font-family", "fantasy");
+        $("#remain").css("font-family", "fantasy");
     }
+
     
  
     // 繰り返し実行する処理
