@@ -1,11 +1,11 @@
 /**/
 
 body {
-  background: #badce0d5;
+  background: #d5f0f3d5;
 }
 
 button{
-  color: #e0a500;
+  color: #4d3709;
   font-family: Times;
   border-radius: 20px;
 }
@@ -46,8 +46,12 @@ button{
         margin: 0 auto;
     }
 
+    #remain::after{
+      content: "秒";
+    }
+
     #time::after{
-      content: "s";
+      content: "秒";
     }
     
     #mycanvas {
@@ -59,7 +63,7 @@ button{
     }
     
     #btnA {
-        background-color: #ffbe0a;
+        background-color: #eeb053;
         color: #ffffff;
         font-size: 20px;
         position:absolute; top:380px; left:2%; width:43%; height:60px; 
@@ -71,7 +75,7 @@ button{
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
     
