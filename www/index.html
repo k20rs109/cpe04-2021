@@ -227,6 +227,31 @@
           active = false;
           alarm();
         }
+
+        if(rest == 180){
+          $("body").css("background", "#d5f0f3d5");
+        }
+
+        if(rest <= 150){
+          $("body").css("background", "#f1bbb7ec");
+        }
+
+        if(rest <= 120){
+          $("body").css("background", "#fbe5c3ec");
+        }
+
+        if(rest <= 90){
+          $("body").css("background", "#f7ef8bec");
+        }
+
+        if(rest <= 60){
+          $("body").css("background", "#98e7c9d5");
+        }
+
+        if(rest <= 30){
+          $("body").css("background", "#ffffff");
+        }
+        
       }
     } 
 
@@ -247,7 +272,7 @@
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
     <button id="btnD">Reset</button>
-    <input type="number" id="minute" value=0 >
-    <input type="number" id="second" value=10 >
+    <input type="number" id="minute" value=3 >
+    <input type="number" id="second" value=0 >
 </body>
 </html>
