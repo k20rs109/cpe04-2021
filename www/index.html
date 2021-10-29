@@ -38,6 +38,10 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -204,7 +208,8 @@
 
     // ButtonDがクリックされた時の処理
     function btnDClick(e){
-        
+        active = true;
+        startTime = new Date();
     }
 
     
